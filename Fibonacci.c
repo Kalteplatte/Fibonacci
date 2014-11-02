@@ -52,12 +52,8 @@ int Fibonacci3 (int n){  //function with linear time and constant memory
 }
 
 
-int main (){
+int main (){ 
 
-
-printf("%i\n",Fibonacci1(4)); // for testing
-printf("%i\n",Fibonacci2(4));
-printf("%i\n",Fibonacci3(4));
 
 
 
