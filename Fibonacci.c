@@ -24,10 +24,12 @@ int Fibonacci2 (int n){  //function with linear time and linear memory
 	int fib [n];
 	fib[0]=0;
 	fib[1]=1;
-	for (int i=2; i==n-1; i++){
+	int i=2;
+	while(i<n+1){
 		fib[i]=fib[i-1]+fib[i-2];
+		i++;
 	}
-	return fib[n-1];
+	return fib[n];
 }
 
 
@@ -39,10 +41,12 @@ int Fibonacci3 (int n){  //function with linear time and constant memory
 	int fib [3];
 	fib[0]=0;
 	fib[1]=1;
-	for (int i=2; i==n-1; i++){
+	int i=2;
+	while(i<n+1){
 		fib[2]=fib[1]+fib[0];
-		fib[1]=fib[2];
 		fib[0]=fib[1];
+		fib[1]=fib[2];
+		i++;
 	}
 	return fib[2];
 }
@@ -60,5 +64,3 @@ printf("%i\n",Fibonacci3(4));
 return 0;
 
 }
-
-
